@@ -9,6 +9,7 @@ public class App {
 	public static void main(String[] args) {
 		ApplicationContext context=new ClassPathXmlApplicationContext("Spring.xml");
 		Customer cust=(Customer) context.getBean("customer");
+		System.out.println("Added Sysout");
 		System.out.println(cust);
 		
 	}
